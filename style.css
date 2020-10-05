@@ -1,0 +1,37 @@
+body {
+    margin:0; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 10px; 
+}
+
+/*flex wrap for mobile first checkbox*/
+ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+
+h1 {
+    text-align: center; 
+}
+
+label {
+    padding: 10px; 
+}
+
+/*media queries for large tablets and desktops*/
+@media all and (min-width: 800px) {
+
+    ul {
+        height: 200px;
+    }
+
+    li {
+        height: 10%;
+    }
+}
