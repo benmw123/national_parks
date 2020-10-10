@@ -1,3 +1,5 @@
+'use strict'; 
+
 const apiKey = "p1F6hitSASpXdVy7Na2EprT6nkdIA7HLvqhD2u0p";
 const searchURL = 'https://developer.nps.gov/api/v1/parks';
 
@@ -37,18 +39,18 @@ function getParks(query, limit = 10) {
 
 //iterate through responseJson and display name, description, and URL to page
 function displayResults(responseJson) {
-  console.log(responseJson.data[0]);
-  for (i = 0; i < responseJson.data.length; i++) {
-    $('.results').append(`<h3>${responseJson.data[i].fullName}</h3>
+  $("#results").empty();
+  for (let i = 0; i < responseJson.data.length; i++) {
+    $("#results").append(`<h3>${responseJson.data[i].fullName}</h3>
                         <p>${responseJson.data[i].description}</p>
                         <p>URL: <a href=${responseJson.data[i].url}>${responseJson.data[i].url}</a></p><br />`); 
   }
+  $("#results").removeClass("hidden"); 
 }
 
 function watchForm() {
   $('form').submit(event => {
-    event.preventDefault();
-    $('.results').empty(); 
+    event.preventDefault(); 
     const states = $('.state:checked').toArray().map(el => $(el).val()).join(',');//state code is formated here.
     const maxResults = $('#js-max-results').val();
     $('input[type="checkbox"]').prop('checked', false); //uncheck check boxes after form is submitted. 
