@@ -2,136 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>National Parks App</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>National Parks App</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+                type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <header>
-    <h1> This Web Application Displays National Parks in One or More States</h1>
+        <h1> This Web Application Displays National Parks in One or More States</h1>
 </header>
 <main>
-    <form>
-        <!-- checkbox of all states in ul is in the fieldset-->
-        <fieldset>
-            <legend>Please select one or more states</legend>
-            <ul>
-                <li><input type="checkbox" name="state" class="state" value="AL" /><label for="Alabama">Alabama</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="AK" /><label for="Alaska">Alaska</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="AZ" /><label for="Arizona">Arizona</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="AR" /><label
-                        for="Arkansas">Arkansas</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="CA" /><label
-                        for="California">California</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="CO" /><label
-                        for="Colorado">Colorado</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="CT" /><label
-                        for="Connecticut">Connecticut</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="DE" /><label
-                        for="Deleware">Deleware</label></li>
-                <li><input type="checkbox" name="state" class="state" value="FL" /><label for="Florida">Florida</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="GA" /><label
-                        for="Georgia">Georgia</label><br /></li>
-                <li><input type="checkbox" name="state" class="state" value="HI" /><label for="Hawaii">Hawaii</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="ID" /><label for="Idaho">Idaho</label></li>
-                <li><input type="checkbox" name="state" class="state" value="IA" /><label for="Iowa">Iowa</label></li>
-                <li><input type="checkbox" name="state" class="state" value="IL" /><label
-                        for="Illinois">Illinois</label></li>
-                <li><input type="checkbox" name="state" class="state" value="IN" /><label
-                        for="Indiana">Indiana</label><br /></li>
-                <li><input type="checkbox" name="state" class="state" value="KS" /><label for="Kansas">Kansas</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="KY" /><label
-                        for="Kentucky">Kentucky</label></li>
-                <li><input type="checkbox" name="state" class="state" value="LA" /><label
-                        for="Louisiana">Louisiana</label></li>
-                <li><input type="checkbox" name="state" class="state" value="ME" /><label for="Maine">Maine</label></li>
-                <li><input type="checkbox" name="state" class="state" value="MD" /><label
-                        for="Maryland">Maryland</label><br /></li>
-                <li><input type="checkbox" name="state" class="state" value="MA" /><label
-                        for="Massachusetts">Massachusetts</label></li>
-                <li><input type="checkbox" name="state" class="state" value="MI" /><label
-                        for="Michigan">Michigan</label></li>
-                <li><input type="checkbox" name="state" class="state" value="MN" /><label
-                        for="Minnesota">Minnesota</label></li>
-                <li><input type="checkbox" name="state" class="state" value="MS" /><label
-                        for="Mississippi">Mississippi</label></li>
-                <li><input type="checkbox" name="state" class="state" value="MO" /><label
-                        for="Missouri">Missouri</label><br /></li>
-                <li><input type="checkbox" name="state" class="state" value="MT" /><label for="Montana">Montana</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="NE" /><label
-                        for="Nebraska">Nebraska</label></li>
-                <li><input type="checkbox" name="state" class="state" value="NV" /><label for="Nevada">Nevada</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="NH" /><label for="New Hampshire">New
-                        Hampshire</label></li>
-                <li><input type="checkbox" name="state" class="state" value="NJ" /><label for="New Jersey">New
-                        Jersey</label></li>
-                <li><input type="checkbox" name="state" class="state" value="NM" /><label for="New Mexico">New
-                        Mexico</label></li>
-                <li><input type="checkbox" name="state" class="state" value="NY" /><label for="New York">New
-                        York</label></li>
-                <li><input type="checkbox" name="state" class="state" value="NC" /><label for="North Carolina">North
-                        Carolina</label></li>
-                <li><input type="checkbox" name="state" class="state" value="ND" /><label for="North Dakota">North
-                        Dakota</label></li>
-                <li><input type="checkbox" name="state" class="state" value="OH" /><label for="Ohio">Ohio</label></li>
-                <li><input type="checkbox" name="state" class="state" value="OK" /><label
-                        for="Oklahoma">Oklahoma</label></li>
-                <li><input type="checkbox" name="state" class="state" value="OR" /><label for="Oregon">Oregon</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="PA" /><label
-                        for="Pennsylvania">Pennsylvania</label>
-                </li>
-                <li><input type="checkbox" name="state" class="state" value="RI" /><label for="Rhode Island">Rhode
-                        Island</label></li>
-                <li><input type="checkbox" name="state" class="state" value="SC" /><label for="South Carolina">South
-                        Carolina</label></li>
-                <li><input type="checkbox" name="state" class="state" value="SD" /><label for="South Dakota">South
-                        Dakota</label></li>
-                <li><input type="checkbox" name="state" class="state" value="TN" /><label
-                        for="Tennessee">Tennessee</label></li>
-                <li><input type="checkbox" name="state" class="state" value="TX" /><label for="Texas">Texas</label></li>
-                <li><input type="checkbox" name="state" class="state" value="UT" /><label for="Utah">Utah</label></li>
-                <li><input type="checkbox" name="state" class="state" value="VT" /><label
-                        for="Vermont">Vermont</label><br /></li>
-                <li><input type="checkbox" name="state" class="state" value="VA" /><label
-                        for="Virginia">Virginia</label></li>
-                <li><input type="checkbox" name="state" class="state" value="WA" /><label
-                        for="Washington">Washington</label></li>
-                <li><input type="checkbox" name="state" class="state" value="WV" /><label for="West Virginia">West
-                        Virginia</label></li>
-                <li><input type="checkbox" name="state" class="state" value="WI" /><label
-                        for="Wisconsin">Wisconsin</label></li>
-                <li><input type="checkbox" name="state" class="state" value="WY" /><label for="Wyoming">Wyoming</label>
-                </li>
-            </ul>
-        </fieldset>
+        <form>
+                <!-- checkbox of all states in ul is in the fieldset-->
+                <fieldset>
+                        <legend>Please select one or more states</legend>
+                        <ul>
+                                <li><input type="checkbox" name="state" class="state" value="AL" /><label
+                                                for="Alabama">Alabama</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="AK" /><label
+                                                for="Alaska">Alaska</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="AZ" /><label
+                                                for="Arizona">Arizona</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="AR" /><label
+                                                for="Arkansas">Arkansas</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="CA" /><label
+                                                for="California">California</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="CO" /><label
+                                                for="Colorado">Colorado</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="CT" /><label
+                                                for="Connecticut">Connecticut</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="DE" /><label
+                                                for="Deleware">Deleware</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="FL" /><label
+                                                for="Florida">Florida</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="GA" /><label
+                                                for="Georgia">Georgia</label><br /></li>
+                                <li><input type="checkbox" name="state" class="state" value="HI" /><label
+                                                for="Hawaii">Hawaii</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="ID" /><label
+                                                for="Idaho">Idaho</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="IA" /><label
+                                                for="Iowa">Iowa</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="IL" /><label
+                                                for="Illinois">Illinois</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="IN" /><label
+                                                for="Indiana">Indiana</label><br /></li>
+                                <li><input type="checkbox" name="state" class="state" value="KS" /><label
+                                                for="Kansas">Kansas</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="KY" /><label
+                                                for="Kentucky">Kentucky</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="LA" /><label
+                                                for="Louisiana">Louisiana</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="ME" /><label
+                                                for="Maine">Maine</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="MD" /><label
+                                                for="Maryland">Maryland</label><br /></li>
+                                <li><input type="checkbox" name="state" class="state" value="MA" /><label
+                                                for="Massachusetts">Massachusetts</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="MI" /><label
+                                                for="Michigan">Michigan</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="MN" /><label
+                                                for="Minnesota">Minnesota</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="MS" /><label
+                                                for="Mississippi">Mississippi</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="MO" /><label
+                                                for="Missouri">Missouri</label><br /></li>
+                                <li><input type="checkbox" name="state" class="state" value="MT" /><label
+                                                for="Montana">Montana</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="NE" /><label
+                                                for="Nebraska">Nebraska</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="NV" /><label
+                                                for="Nevada">Nevada</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="NH" /><label
+                                                for="New Hampshire">New
+                                                Hampshire</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="NJ" /><label
+                                                for="New Jersey">New
+                                                Jersey</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="NM" /><label
+                                                for="New Mexico">New
+                                                Mexico</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="NY" /><label
+                                                for="New York">New
+                                                York</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="NC" /><label
+                                                for="North Carolina">North
+                                                Carolina</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="ND" /><label
+                                                for="North Dakota">North
+                                                Dakota</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="OH" /><label
+                                                for="Ohio">Ohio</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="OK" /><label
+                                                for="Oklahoma">Oklahoma</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="OR" /><label
+                                                for="Oregon">Oregon</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="PA" /><label
+                                                for="Pennsylvania">Pennsylvania</label>
+                                </li>
+                                <li><input type="checkbox" name="state" class="state" value="RI" /><label
+                                                for="Rhode Island">Rhode
+                                                Island</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="SC" /><label
+                                                for="South Carolina">South
+                                                Carolina</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="SD" /><label
+                                                for="South Dakota">South
+                                                Dakota</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="TN" /><label
+                                                for="Tennessee">Tennessee</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="TX" /><label
+                                                for="Texas">Texas</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="UT" /><label
+                                                for="Utah">Utah</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="VT" /><label
+                                                for="Vermont">Vermont</label><br /></li>
+                                <li><input type="checkbox" name="state" class="state" value="VA" /><label
+                                                for="Virginia">Virginia</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="WA" /><label
+                                                for="Washington">Washington</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="WV" /><label
+                                                for="West Virginia">West
+                                                Virginia</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="WI" /><label
+                                                for="Wisconsin">Wisconsin</label></li>
+                                <li><input type="checkbox" name="state" class="state" value="WY" /><label
+                                                for="Wyoming">Wyoming</label>
+                                </li>
+                        </ul>
+                </fieldset>
 
-        <label for="js-max-results">Max Results</label>
-        <input type="number" id="js-max-results" name="js-max-results" value="10" min="1">
-        <input type="submit" value="submit">
-    </form>
-    <p id="js-error-message" class="error-message"></p>
-    <!-- results of API will be shown in 'results' class-->
-    <section id="results" class="hidden"></section>
+                <label for="js-max-results">Max Results</label>
+                <input type="number" id="js-max-results" name="js-max-results" value="10" min="1">
+                <input type="submit" value="submit">
+        </form>
+        <p id="js-error-message" class="error-message"></p>
+        <!-- results of API will be shown in 'results' class-->
+        <section id="results" class="hidden"></section>
 </main>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
